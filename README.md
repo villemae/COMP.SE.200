@@ -1,12 +1,8 @@
-# Student template
+# Project Repository
 
-## Purpose of this repository
+## Aapo ja Ville
 
-This is a project template for students participating in Software Testing course
-at Tampere University.
-
-The repository only contains the source code that is under testing, `package.json` skeleton
-and LICENSE file.
+The repository contains the source code that is under testing (src/), test files (test/), other configuration files for version control and CI-pipeline and LICENSE file.
 
 Source code folder contains a separate license file that must **NOT** be removed under any circumstances!
 Removing this license file directly violates terms and conditions of the software under testing.
