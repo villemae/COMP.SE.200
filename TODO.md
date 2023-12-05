@@ -1,5 +1,9 @@
+alusta Github Actions ja Coveralls toimimaan
+puske gittiin
+tarkista että toimii
+
 kirjoita testit:
-camelCase.test.js
+
 capitalize.test.js
 chunk.test.js
 clamp.test.js
