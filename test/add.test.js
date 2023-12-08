@@ -28,6 +28,6 @@ describe('add', () => {
     })
 
     it('should throw an error with non-numeric arguments', () => {
-        expect(() => add('qwerty', 1)).to.throw
+        expect(() => add('qwerty', 1)).to.throw()
     })
 })

@@ -23,7 +23,7 @@ describe('capitalize', () => {
         expect(capitalize('lOreM IpSUm DOlOR')).to.equal('Lorem ipsum dolor')
     })
 
-    it('should throw and catch an error with non-string argument', () => {
+    it('should throw an error with non-string argument', () => {
         const testObject = {name: 'foo bar', age: 313}
         const testNumber = 85.2
         expect(() => capitalize(testObject)).to.throw()

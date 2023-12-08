@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "mocha",
-    "coverage": "c8 --reporter=lcov --all --include=src/add.js --include=src/camelCase.js --include=src/capitalize.js --include=src/chunk.js mocha"
+    "coverage": "c8 --reporter=lcov --all --include=src/add.js --include=src/camelCase.js --include=src/capitalize.js --include=src/chunk.js --include=src/clamp.js --include=src/defaultTo.js --include=src/filter.js --include=src/isEmpty.js --include=src/toNumber.js --include=src/words.js mocha"
   },
   "author": "",
   "license": "MIT",

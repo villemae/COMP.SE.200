@@ -22,7 +22,7 @@ describe('camelCase', () => {
         expect(camelCase('lOreM IpSUm DOlOR')).to.equal('loremIpsumDolor')
     })
 
-    it('should throw and catch an error with non-string argument', () => {
+    it('should throw an error with non-string argument', () => {
         const testObject = {name: 'foo bar', age: 313}
         expect(() => camelCase(testObject)).to.throw(TypeError)
     })

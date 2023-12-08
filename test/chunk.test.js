@@ -7,6 +7,10 @@ describe('chunk', () => {
     const array_with_6 = [0, 1, 2, 3, 4, 5]
     const array_with_15 = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o']
 
+    it('should return empty array when no arguments are given', () => {
+        expect(chunk()).to.be.empty
+    })
+
     it('with empty array as argument should return empty array', () => {
         expect(chunk(empty_array)).to.be.empty
     })
