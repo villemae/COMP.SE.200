@@ -1,12 +1,10 @@
-alusta Github Actions ja Coveralls toimimaan
-puske gittiin
-tarkista että toimii
-
 kirjoita testit:
 
-capitalize.test.js
+Ville:
 chunk.test.js
 clamp.test.js
+
+Aapo:
 defaultTo.test.js
 filter.test.js
 isEmpty.test.js
