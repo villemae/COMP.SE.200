@@ -48,7 +48,7 @@ describe('toNumber', () => {
     it('should handle binary, octal, and hexadecimal strings', () => {
         expect(toNumber('0b1010')).to.equal(10)
         expect(toNumber('0o777')).to.equal(511)
-        expect(isNaN(toNumber('0xabc'))).to.equal(true)
+        expect(toNumber('0xabc')).to.equal(2748)
     })
 
     it('should return NaN for invalid hexadecimal strings', () => {
