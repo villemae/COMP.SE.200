@@ -1,7 +1,7 @@
 import { expect } from 'chai'
 import defaultTo from '../src/defaultTo.js'
 
-describe('defaultTo function', () => {
+describe('defaultTo:', () => {
 
   it('should return the original value if not null or undefined', () => {
     expect(defaultTo(1, 10)).to.equal(1);

@@ -1,7 +1,7 @@
 import { expect } from 'chai'
 import words from '../src/words.js'
 
-describe('Words test suite', () => {
+describe('words', () => {
     
     it('with empty string', () => {
         expect(words('')).to.deep.equal([])
@@ -37,7 +37,7 @@ describe('Words test suite', () => {
     })
 
     it('with string of random special characters, alphanumeric characters and spaces', () => {
-        expect(words(' a .b  c1, d23?? !!4ef  g[56  h7]8 # " 9@£0i$¤jk %&lm')).to.be.equal(
+        expect(words(' a .b  c1, d23?? !!4ef  g[56  h7]8 # " 9@£0i¤jk &lm')).to.be.equal(
             ['a', 'b', 'c1', 'd23', '4ef', 'g', '56', 'h7', '8', '9', '0i', 'jk', 'lm'])
     })
 

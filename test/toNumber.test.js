@@ -1,7 +1,7 @@
 import { expect } from 'chai'
 import toNumber from '../src/toNumber.js'
 
-describe('toNumber test suite', () => {
+describe('toNumber', () => {
     
     it('with integer', () => {
         expect(toNumber(1)).to.equal(1)
