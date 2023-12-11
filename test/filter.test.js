@@ -1,40 +1,36 @@
 import { expect } from 'chai'
 import filter from '../src/filter.js'
 
-describe('filter function', () => {
+const users = [
+    { 'user': 'barney', 'active': true },
+    { 'user': 'fred', 'active': false },
+    { 'user': 'ville', 'active': true },
+    { 'user': 'aapo', 'active': false }
+  ]
+
+describe('filter', () => {
 
   it('should filter elements based on the predicate', () => {
-    const users = [
-      { 'user': 'barney', 'active': true },
-      { 'user': 'fred', 'active': false }
-    ]
+
     const result = filter(users, ({ active }) => active)
 
-    expect(result).to.deep.equal([{ 'user': 'barney', 'active': true }])
+    expect(result).to.deep.equal([{ 'user': 'barney', 'active': true }, { 'user': 'ville', 'active': true }])
   })
 
   it('should handle an empty array', () => {
     const result = filter([], () => true)
 
-    expect(result).to.deep.equal([])
+    expect(result).to.deep.equal([[]])
   })
 
   it('should handle a predicate that filters nothing', () => {
-    const users = [
-      { 'user': 'barney', 'active': true },
-      { 'user': 'fred', 'active': false }
-    ]
 
     const result = filter(users, () => false)
 
-    expect(result).to.deep.equal([])
+    expect(result).to.deep.equal([[]])
   })
 
   it('should handle a predicate that filters everything', () => {
-    const users = [
-      { 'user': 'barney', 'active': true },
-      { 'user': 'fred', 'active': false }
-    ]
 
     const result = filter(users, () => true)
 
